@@ -1,2 +1,23 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<br> <!--this tag, that is left open, is a "void element" -->
+<div class="jumbotron">
+  <h1>Stand Up</h1>
+  <h1>Master of Ceremonies</h1>
+  <p> Keep all your dates in line son!</p>
+  <p>
+    <%= link_to "Sign In", new_user_session_path, class: 'btn btn-primary' %> or
+    <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %> or
+    <%= link_to "View Dates", calendar_show_path, class: 'btn btn-primary'%>
+  </p>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <h2>User updated app</h2>
+    <p>Need help finding comedy clubs or open mic dates?</p>
+  </div>
+
+  <div class="col-md-4">
+    <h2>In a different city and want to find a comedy night?</h2>
+    <p>Get in touch with the local comedy scene and get booked!</p>
+  </div>
+</div>
